@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Aux from "../../../../../../../../../hoc/_Aux";
-import DEMO from "../../../../../../../../../store/constant";
+import CONST_APP from "../../../../../../../../../store/constant";
 const images = require.context('../../../../../../../../../assets/images/user', true);
 
 const messages = (props) => {
     let image = '';
     if (props.message.type) {
         image = (
-            <a className="media-left photo-table" href={DEMO.BLANK_LINK}>
+            <a className="media-left photo-table" href={CONST_APP.BLANK_LINK}>
                 <img className="media-object img-radius img-radius m-t-5" src={images(`./${props.photo}`)} alt={props.name} />
             </a>
         );

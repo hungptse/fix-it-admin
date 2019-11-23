@@ -3,7 +3,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 
 import Friends from './Friends';
 import Aux from "../../../../../../hoc/_Aux";
-import DEMO from "../../../../../../store/constant";
+import CONST_APP from "../../../../../../store/constant";
 
 
 const chatList = (props) => {
@@ -21,7 +21,7 @@ const chatList = (props) => {
                     </div>
                 </div>
                 <div className="h-list-body">
-                    <a href={DEMO.BLANK_LINK} className="h-close-text" onClick={props.closed}><i className="feather icon-chevrons-right" /></a>
+                    <a href={CONST_APP.BLANK_LINK} className="h-close-text" onClick={props.closed}><i className="feather icon-chevrons-right" /></a>
                     <div className="main-friend-cont scroll-div">
                         <div className="main-friend-list" style={{height: 'calc(100vh - 85px)'}}>
                             <PerfectScrollbar>

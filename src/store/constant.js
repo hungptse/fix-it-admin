@@ -1,5 +1,5 @@
-const DEMO = {
+const NAV = {
     BLANK_LINK: "#!",
 };
 
-export default DEMO;
+export default NAV;

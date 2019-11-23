@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import NavLeft from "./NavLeft";
 import NavRight from "./NavRight";
 import Aux from "../../../../hoc/_Aux";
-import DEMO from "../../../../store/constant";
+import CONST_APP from "../../../../store/constant";
 import * as actionTypes from "../../../../store/actions";
 
 class NavBar extends Component {
@@ -23,15 +23,15 @@ class NavBar extends Component {
             <Aux>
                 <header className={headerClass.join(' ')}>
                     <div className="m-header">
-                        <a className={toggleClass.join(' ')} id="mobile-collapse1" href={DEMO.BLANK_LINK} onClick={this.props.onToggleNavigation}><span/></a>
-                        <a href={DEMO.BLANK_LINK} className="b-brand">
+                        <a className={toggleClass.join(' ')} id="mobile-collapse1" href={CONST_APP.BLANK_LINK} onClick={this.props.onToggleNavigation}><span/></a>
+                        <a href={CONST_APP.BLANK_LINK} className="b-brand">
                             <div className="b-bg">
                                 <i className="feather icon-trending-up"/>
                             </div>
                             <span className="b-title">Datta Able</span>
                         </a>
                     </div>
-                    <a className="mobile-menu" id="mobile-header" href={DEMO.BLANK_LINK}><i className="feather icon-more-horizontal"/></a>
+                    <a className="mobile-menu" id="mobile-header" href={CONST_APP.BLANK_LINK}><i className="feather icon-more-horizontal"/></a>
                     <div className="collapse navbar-collapse">
                         <NavLeft/>
                         <NavRight rtlLayout={this.props.rtlLayout} />

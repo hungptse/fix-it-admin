@@ -1,6 +1,6 @@
 import React from 'react';
-import DEMO  from './../../../../../store/constant';
 import Aux from "../../../../../hoc/_Aux";
+import NAV from './../../../../../store/constant';
 
 const navLogo = (props) => {
     let toggleClass = ['mobile-menu'];
@@ -11,13 +11,13 @@ const navLogo = (props) => {
     return (
         <Aux>
             <div className="navbar-brand header-logo">
-                 <a href={DEMO.BLANK_LINK} className="b-brand">
+                 <a href={NAV.BLANK_LINK} className="b-brand">
                     <div className="b-bg">
-                        <i className="feather icon-trending-up" />
+                        <i className="feather cpu" />
                     </div>
-                    <span className="b-title">Datta Able</span>
+                    <span className="b-title">Fixit - Dashboard</span>
                  </a>
-                <a href={DEMO.BLANK_LINK} className={toggleClass.join(' ')} id="mobile-collapse" onClick={props.onToggleNavigation}><span /></a>
+                <a href={NAV.BLANK_LINK} className={toggleClass.join(' ')} id="mobile-collapse" onClick={props.onToggleNavigation}><span /></a>
             </div>
         </Aux>
     );
